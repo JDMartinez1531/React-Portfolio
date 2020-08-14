@@ -1,0 +1,16 @@
+.name {
+    font-size: xxx-large;
+    color: #E0FBFC;
+    margin-top: 25px;
+}
+
+.intro {
+    margin-top: 50px;
+}
+
+.intro-text {
+    padding: 50px;
+    color: #FFC857;
+    font-size: x-large;
+    font-weight: bold;
+}
