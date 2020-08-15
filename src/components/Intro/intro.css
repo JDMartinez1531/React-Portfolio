@@ -1,6 +1,6 @@
 .name {
     font-size: xxx-large;
-    color: #E0FBFC;
+    color: #FFBB33;
     margin-top: 25px;
 }
 
@@ -10,7 +10,9 @@
 
 .intro-text {
     padding: 50px;
-    color: #FFC857;
+    color: #FFBB33;
     font-size: x-large;
     font-weight: bold;
+    background-color: #0A3D5C;
+    opacity: .8;
 }
