@@ -1,21 +1,38 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav"
+import Nav from "react-bootstrap/Nav";
+import {
+	FaLinkedin,
+	FaGithub,
+	FaPhoneAlt,
+} from "react-icons/fa";
+import {AiOutlineMail} from "react-icons/ai"
+import "./footer.css"
+const linkedInUrl = "https://www.linkedin.com/in/joshuadmartinez/";
+const gitHubUrl = "https://github.com/JDMartinez1531";
+const phone = "tel:+5126580746"
+const email = "mailto:jdmartinez1531@gmail.com"
 
 function Footer() {
 	return (
-		<Nav className="justify-content-center" activeKey="/home">
+		<Nav className="justify-content-center footer">
 			<Nav.Item>
-				<Nav.Link href="/home">Active</Nav.Link>
+				<Nav.Link href={linkedInUrl} className="footer-icons">
+					<FaLinkedin />
+				</Nav.Link>
 			</Nav.Item>
 			<Nav.Item>
-				<Nav.Link eventKey="link-1">Link</Nav.Link>
+				<Nav.Link href={gitHubUrl} className="footer-icons">
+					<FaGithub />
+				</Nav.Link>
 			</Nav.Item>
 			<Nav.Item>
-				<Nav.Link eventKey="link-2">Link</Nav.Link>
+				<Nav.Link href={phone} className="footer-icons">
+					<FaPhoneAlt />
+				</Nav.Link>
 			</Nav.Item>
 			<Nav.Item>
-				<Nav.Link eventKey="disabled" disabled>
-					Disabled
+				<Nav.Link href={email} className="footer-icons">
+					<AiOutlineMail />
 				</Nav.Link>
 			</Nav.Item>
 		</Nav>
