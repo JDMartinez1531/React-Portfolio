@@ -1,18 +1,18 @@
 .name {
-    font-size: xxx-large;
     color: #FFBB33;
-    margin-top: 25px;
-}
-
-.intro {
-    margin-top: 50px;
+    text-align: center;
 }
 
 .intro-text {
-    padding: 50px;
     color: #FFBB33;
-    font-size: x-large;
+    text-align: center;
     font-weight: bold;
-    background-color: #0A3D5C;
-    opacity: .8;
+}
+
+.intro {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../images/gearsbg.jpg");
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+
 }
