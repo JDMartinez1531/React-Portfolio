@@ -1,14 +1,27 @@
 import React from "react";
 import "./about.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import profileImage from "../../images/profile-05.jpg";
+import Media from "react-bootstrap/Media";
+import Image from "react-bootstrap/Image";
 
 function About() {
 	return (
-		<Container fluid className="about-section">
+		<Media className="about">
+			<Image src={profileImage} roundedCircle className="align-self-center mr-3 aboutImage" />
+			<Media.Body className="align-self-center aboutText">
+				<h5>Media Heading</h5>
+				<p>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+					scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in
+				</p>
+			</Media.Body>
+		</Media>
+	);
+}
+
+export default About;
+
+/* <Container fluid className="about-section">
 			<Row>
 				<Col xs={6} md={4}>
 					<Image src={profileImage} roundedCircle />
@@ -27,8 +40,14 @@ function About() {
 					</p>
 				</Col>
 			</Row>
-		</Container>
-	);
-}
+		</Container> */
 
-export default About;
+
+		// <img
+		// 		width={150}
+		// 		height={150}
+		// 		borderRadius={50}
+		// 		className="profile align-self-center ml-4 mr-3"
+		// 		src={profileImage}
+		// 		alt="handsome guy"
+		// 	/>

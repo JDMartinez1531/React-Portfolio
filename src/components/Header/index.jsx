@@ -9,7 +9,7 @@ function Header() {
 			sticky="top"
 			collapseOnSelect
 			expand="lg"
-			variant="dark"
+			variant="light"
 			className="navbg"
 		>
 			<Navbar.Brand href="#home">

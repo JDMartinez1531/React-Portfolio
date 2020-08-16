@@ -1,13 +1,17 @@
-.about-section {
-    height: 50vw;
-    width: 100vw;
+.about {
+    height: 60vw;
+    width: 100%;
     background-color: #0A3D5C;
+    padding: 0 4rem 0 4rem;
 }
 
-.about-text {
-    margin-top:50px;
-}
 
-.aboutP {
-    font-size:x-large;
+
+@media only screen and (max-width: 768px) {
+    .aboutImage{
+        height: 80%;
+    }
+    .aboutText{
+
+    }
 }
