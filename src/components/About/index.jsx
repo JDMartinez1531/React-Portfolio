@@ -3,17 +3,19 @@ import "./about.css";
 import profileImage from "../../images/profile-05.jpg";
 import Media from "react-bootstrap/Media";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
 
 function About() {
 	return (
 		<Media className="about">
 			<Image src={profileImage} roundedCircle className="align-self-center mr-3 aboutImage" />
 			<Media.Body className="align-self-center aboutText">
-				<h5>Media Heading</h5>
+				<h4>About Me</h4>
 				<p>
 					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
 					scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in
 				</p>
+				<Button variant="secondary" className="align-self-right resumeButton">My Resume</Button>
 			</Media.Body>
 		</Media>
 	);

@@ -5,13 +5,14 @@
     padding: 0 4rem 0 4rem;
 }
 
+.aboutText{
+    color: #EBEBFF;
+}
+
 
 
 @media only screen and (max-width: 768px) {
     .aboutImage{
         height: 80%;
-    }
-    .aboutText{
-
     }
 }

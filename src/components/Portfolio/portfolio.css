@@ -1,7 +1,16 @@
-.portfolio-container {
-    margin-top: 200px;
+.portfolio {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url("../../images/goldcog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 .cardDiv {
     justify-content:center;
+}
+
+.portfolioText {
+    color: #EBEBFF;
+    margin-top: 2.5rem;
 }
