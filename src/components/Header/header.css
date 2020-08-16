@@ -1,0 +1,14 @@
+.navbg {
+    background: #FFFFFF;
+    min-height: 10vh;
+    font-size: 1.2rem;
+}
+
+.navText {
+    color: #0A3D5C;
+}
+
+.brandText {
+    color: black;
+    font-weight: bold;
+}

@@ -1,18 +1,23 @@
 .name {
-    color: #FFBB33;
+    color: #EBEBFF;
     text-align: center;
+    margin-top: 15%
 }
 
 .intro-text {
-    color: #FFBB33;
+    color: #EBEBFF;
     text-align: center;
     font-weight: bold;
+    font-size: 1.25rem;
+    
 }
 
 .intro {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../images/gearsbg.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url("../../images/lightbg.jpg");
     height: 50rem;
     background-size: cover;
     background-position: center;
-
+    background-attachment: fixed;
 }
+
+/* linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), */

@@ -9,10 +9,10 @@ function Intro() {
 		<Container fluid className="intro">
 			<Row>
 				<Col>
-					<h1 className="name">Joshua Martinez</h1>
+					<h1 className="align-items-center name">Joshua Martinez</h1>
 				</Col>
 			</Row>
-			<Row>
+			<Row className="align-items-center">
 				<Col md={{ span: 6, offset: 3 }}>
 					<p className="intro-text">
 						Lorem ipsum dolor sit amet, dicat propriae mei ea, duo at enim dolor
