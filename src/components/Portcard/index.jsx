@@ -1,22 +1,21 @@
 import React from "react";
 import "./portcard.css";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import img from "../../images/teampro.png"
+import { FaGithub } from "react-icons/fa";
 
-function Portcard() {
+function Portcard(props) {
 	return (
 		<Card className="portcard shadow p-3 mb-5 bg-white rounded">
-			<Card.Img variant="top" src={img} />
+			<Card.Img variant="top" src={props.imageLocation} />
 			<Card.Body>
-				<Card.Title>Card title</Card.Title>
-				<Card.Text>
-					This is a wider card with supporting text below as a natural lead-in
-					to additional content. This content is a little bit longer.
-				</Card.Text>
+				<Card.Title>
+					<a href={props.url}>{props.title}</a>
+				</Card.Title>
+				<Card.Text>{props.text}</Card.Text>
 			</Card.Body>
-					<Button block >Click me</Button>
-			
+			<a href={props.repo}>
+				<FaGithub />
+			</a>
 		</Card>
 	);
 }
