@@ -23,6 +23,7 @@ function Contact() {
 
 	const handleSubmit = (event) => {
 		const form = event.target;
+		console.log(form)
 		if (form.checkValidity() === false) {
 			event.preventDefault();
 			event.stopPropagation();
