@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Form from "react-bootstrap/Form";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import "./contact.css"
 
 function Contact() {
-	const [validated, setValidated] = useState(false);
 	const [serverState, setServerState] = useState({
 		submitting: false,
 		status: null,
 	});
-
 	const handleServerResponse = (ok, msg, form) => {
 		setServerState({
 			submitting: false,
@@ -20,16 +19,9 @@ function Contact() {
 			form.reset();
 		}
 	};
-
-	const handleSubmit = (event) => {
-		const form = event.target;
-		console.log(form)
-		if (form.checkValidity() === false) {
-			event.preventDefault();
-			event.stopPropagation();
-		}
-		event.preventDefault();
-		setValidated(true);
+	const handleOnSubmit = (e) => {
+		e.preventDefault();
+		const form = e.target;
 		setServerState({ submitting: true });
 		axios({
 			method: "post",
@@ -43,43 +35,34 @@ function Contact() {
 				handleServerResponse(false, r.response.data.error, form);
 			});
 	};
-
 	return (
-		<Form noValidate validated={validated} onSubmit={handleSubmit}>
-			<Form.Group as={Col} md="4" controlId="validationCustom01">
-				<Form.Control required type="text" placeholder="Enter name" />
-				<Form.Control.Feedback>Accepted</Form.Control.Feedback>
-				<Form.Control.Feedback type="invalid">
-					Please enter name.
-				</Form.Control.Feedback>
-			</Form.Group>
-			<Form.Group as={Col} md="4" controlId="validationCustom02">
-				<Form.Control required type="email" placeholder="Enter email" />
-				<Form.Control.Feedback>Accepted</Form.Control.Feedback>
-				<Form.Control.Feedback type="invalid">
-					Please enter email.
-				</Form.Control.Feedback>
-			</Form.Group>
-			<Form.Group as={Col} md="4" controlId="validationCustomUsername">
-				<Form.Control
-					required
-					placeholder="Leave me a message."
-					as="textarea"
-					rows="3"
-				/>
-				<Form.Control.Feedback type="invalid">
-					Please don't send blank messages.
-				</Form.Control.Feedback>
-			</Form.Group>
-			<Button type="submit" disabled={serverState.submitting}>
-				Send
-			</Button>
-			{serverState.status && (
-				<p className={!serverState.status.ok ? "errorMsg" : ""}>
-					{serverState.status.msg}
-				</p>
-			)}
-		</Form>
+    <Container fluid className="form-wrapper">
+		<Container className="formContainer">
+			<Row>
+				<Col>
+					<h1>Contact</h1>
+				</Col>
+			</Row>
+			<Row>
+				<Col>
+					<form onSubmit={handleOnSubmit}>
+						<label htmlFor="email">Email:</label>
+						<input id="email" type="email" name="email" required />
+						<label htmlFor="message">Message:</label>
+						<textarea id="message" name="message" required></textarea>
+						<button type="submit" disabled={serverState.submitting}>
+							Submit
+						</button>
+						{serverState.status && (
+							<p className={!serverState.status.ok ? "errorMsg" : ""}>
+								{serverState.status.msg}
+							</p>
+						)}
+					</form>
+				</Col>
+			</Row>
+		</Container>
+    </Container>
 	);
 }
 
