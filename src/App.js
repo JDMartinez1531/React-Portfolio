@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import PortfolioData from "./assets/portfolioData.json"
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <Intro />
       <About />
-      <Portfolio />
+      <Portfolio portfolio={PortfolioData}/>
       <Contact />
       <Footer />
     </div>
