@@ -5,7 +5,7 @@ import Intro from './components/Intro'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import PortfolioData from "./assets/portfolioData.json"
+import PortfolioData from "./assets/portfolioData"
 
 function App() {
   return (
