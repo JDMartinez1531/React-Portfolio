@@ -54,7 +54,7 @@ function Contact() {
 						/>
 				</Col>
 				<Col>
-						<textarea
+						<textarea className="formtextarea"
 							id="message"
 							name="message"
 							cols="40"

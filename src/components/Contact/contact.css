@@ -18,8 +18,8 @@
     text-align: center;
     background-color: black;
     width: 100%;
-    height: 15vh;
-    padding-top: 1.5rem;
+    height: 20vh;
+    padding-top: 1rem;
 }
 
 .heading-col {
@@ -29,4 +29,12 @@
 .form-row {
     justify-content: center;
     margin-top: 5rem;
+}
+
+.formtextarea {
+    margin: 2rem 0 2rem 0;
+}
+
+#email {
+    width: inherit;
 }

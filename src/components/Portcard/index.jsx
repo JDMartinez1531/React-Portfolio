@@ -13,8 +13,8 @@ function Portcard(props) {
 				</Card.Title>
 				<Card.Text>{props.text}</Card.Text>
 			</Card.Body>
-			<a href={props.repo}>
-				<FaGithub />
+			<a className="ghicon" href={props.repo}>
+				<FaGithub  />
 			</a>
 		</Card>
 	);
