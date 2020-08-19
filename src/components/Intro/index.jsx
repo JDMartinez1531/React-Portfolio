@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 function Intro() {
 	return (
-		<Container fluid className="intro">
+		<Container fluid className="intro" id="top">
 			<Row>
 				<Col>
 					<h1 className="align-items-center name">Joshua Martinez</h1>

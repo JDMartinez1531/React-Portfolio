@@ -36,7 +36,7 @@ function Contact() {
 			});
 	};
 	return (
-    <Container fluid className="form-wrapper">
+    <Container fluid className="form-wrapper" id="contact">
 		<Container className="formContainer">
 			<Row>
 				<Col>

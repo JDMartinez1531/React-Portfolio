@@ -17,7 +17,7 @@ function Portfolio(props) {
 		/>
 	));
 	return (
-		<Container fluid className="portfolio">
+		<Container fluid className="portfolio" id="portfolio">
 			<Row>
 				<Col>
 					<h2 className="text-center portfolioText">Portfolio</h2>

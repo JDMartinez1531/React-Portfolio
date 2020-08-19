@@ -1,14 +1,17 @@
 .about {
-    height: 100vw;
+    height: 70vw;
     width: 100%;
     background-color: black;
-    padding: 0 4rem 0 4rem;
+    padding: 0 3rem 0 3rem;
 }
 
 .aboutText{
     color: #EBEBFF;
 }
 
+.sendToPdfFiller {
+    display: none !important;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -19,6 +22,22 @@
 
 @media only screen and (max-width:670px) {
     .aboutImage{
-        height: 50%;
+        height: 20vw;
+        padding-top: 2rem;
+        margin-top: 30%;
+    }
+    .about {
+        flex-direction: column;
+        padding: 0 2rem 2rem 2rem;
+        height: 100vh;
+    }
+    .aboutText {
+        margin-bottom: 30%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .about {
+        height: 60vw;
     }
 }

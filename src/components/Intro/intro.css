@@ -14,8 +14,20 @@
 
 .intro {
     background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url("../../images/lightbg.jpg");
-    height: 50rem;
+    height: 60rem;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+@media only screen and (max-width:670px) {
+    .intro {
+        height: 100vh;
+    }
+    .name {
+        margin-top:40%;
+    }
+    .intro-text {
+        margin-bottom: 40%;
+    }
 }

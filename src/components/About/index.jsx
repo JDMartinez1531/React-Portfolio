@@ -8,7 +8,7 @@ import pdf from "../../assets/files/jdmresume2020.pdf"
 
 function About() {
 	return (
-		<Media className="about">
+		<Media className="about" id="about">
 			<Image
 				src={profileImage}
 				roundedCircle
