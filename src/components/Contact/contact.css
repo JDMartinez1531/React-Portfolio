@@ -4,5 +4,29 @@
 
 .form-wrapper {
     background-color: white;
-    height:80vh;
+    height:40vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url("../../images/contactbg.jpg");
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.contact-header {
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 15vh;
+    padding-top: 1.5rem;
+}
+
+.heading-col {
+    padding: 0;
+}
+
+.form-row {
+    justify-content: center;
+    margin-top: 5rem;
 }

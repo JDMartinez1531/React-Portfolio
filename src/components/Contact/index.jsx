@@ -3,7 +3,7 @@ import axios from "axios";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./contact.css"
+import "./contact.css";
 
 function Contact() {
 	const [serverState, setServerState] = useState({
@@ -36,8 +36,59 @@ function Contact() {
 			});
 	};
 	return (
-    <Container fluid className="form-wrapper" id="contact">
-		<Container className="formContainer">
+		<Container fluid className="form-wrapper" id="contact">
+			<Row>
+				<Col className="heading-col">
+					<h1 className="contact-header">Contact</h1>
+				</Col>
+			</Row>
+			<Row className="form-row">
+			<form onSubmit={handleOnSubmit}>
+				<Col>
+						<input
+							id="email"
+							type="email"
+							name="email"
+							placeholder="Enter email"
+							required
+						/>
+				</Col>
+				<Col>
+						<textarea
+							id="message"
+							name="message"
+							cols="40"
+							placeholder="Feel free to leave me a message"
+							required
+						></textarea>
+				</Col>
+				<Col>
+						<button className="btn btn-primary" type="submit" disabled={serverState.submitting}>
+							Submit
+						</button>
+						{serverState.status && (
+							<p className={!serverState.status.ok ? "errorMsg" : ""}>
+								{serverState.status.msg}
+							</p>
+						)}
+				</Col>
+					</form>
+			</Row>
+		</Container>
+	);
+}
+
+export default Contact;
+
+
+
+
+
+
+
+
+
+/* <Container fluid className="form-wrapper" id="contact">
 			<Row>
 				<Col>
 					<h1>Contact</h1>
@@ -46,10 +97,20 @@ function Contact() {
 			<Row>
 				<Col>
 					<form onSubmit={handleOnSubmit}>
-						<label htmlFor="email">Email:</label>
-						<input id="email" type="email" name="email" required />
-						<label htmlFor="message">Message:</label>
-						<textarea id="message" name="message" required></textarea>
+						<input
+							id="email"
+							type="email"
+							name="email"
+							placeholder="Enter email"
+							required
+						/>
+						<textarea
+							id="message"
+							name="message"
+							cols="40"
+							placeholder="Feel free to leave me a message"
+							required
+						></textarea>
 						<button type="submit" disabled={serverState.submitting}>
 							Submit
 						</button>
@@ -61,9 +122,4 @@ function Contact() {
 					</form>
 				</Col>
 			</Row>
-		</Container>
-    </Container>
-	);
-}
-
-export default Contact;
+		</Container> */

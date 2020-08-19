@@ -60,7 +60,7 @@ function Header() {
 						to="contact"
 						spy={true}
 						smooth={true}
-						offset={-80}
+						offset={-90}
 						duration={1000}
 					>
 						Contact
