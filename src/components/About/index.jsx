@@ -4,18 +4,29 @@ import profileImage from "../../images/profile-05.jpg";
 import Media from "react-bootstrap/Media";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
+import pdf from "../../assets/files/jdmresume2020.pdf"
 
 function About() {
 	return (
 		<Media className="about">
-			<Image src={profileImage} roundedCircle className="align-self-center mr-3 aboutImage" />
+			<Image
+				src={profileImage}
+				roundedCircle
+				className="align-self-center mr-3 aboutImage"
+			/>
 			<Media.Body className="align-self-center aboutText">
 				<h4>About Me</h4>
 				<p>
-					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-					scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in
+					After over a decade of successful experience operating various types
+					of kitchens from fine dining to large scale operations, I have decided
+					to dive into the rewarding world of web developement. After a year of
+					planning, saving, and a little extra time due to quarantine, I have
+					finally made the pivot and enrolled in the Full Stack Web Developer
+					certificate program at UT.
 				</p>
-				<Button variant="secondary" className="align-self-right resumeButton">My Resume</Button>
+				<Button variant="secondary" className="align-self-right resumeButton" href={pdf} target = "_blank">
+					My Resume
+				</Button>
 			</Media.Body>
 		</Media>
 	);
@@ -44,12 +55,11 @@ export default About;
 			</Row>
 		</Container> */
 
-
-		// <img
-		// 		width={150}
-		// 		height={150}
-		// 		borderRadius={50}
-		// 		className="profile align-self-center ml-4 mr-3"
-		// 		src={profileImage}
-		// 		alt="handsome guy"
-		// 	/>
+// <img
+// 		width={150}
+// 		height={150}
+// 		borderRadius={50}
+// 		className="profile align-self-center ml-4 mr-3"
+// 		src={profileImage}
+// 		alt="handsome guy"
+// 	/>

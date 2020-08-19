@@ -15,14 +15,10 @@ function Intro() {
 			<Row className="align-items-center">
 				<Col md={{ span: 6, offset: 3 }}>
 					<p className="intro-text">
-						Lorem ipsum dolor sit amet, dicat propriae mei ea, duo at enim dolor
-						referrentur, te posse pericula pri. Ei vix nonumes dissentias, dolor
-						legere consectetuer quo te. Lorem nostro gubergren ad quo. Et
-						insolens instructior his, vis odio propriae gubergren in, cu rebum
-						erroribus consequuntur mel. Te sed nobis graeco. Ridens iriure vix
-						at. Ut pro graeco aliquip, ei sapientem temporibus vel. Possim
-						eripuit ut nec, id ponderum voluptatibus quo. Ea dicit tibique
-						periculis mea, phaedrum
+						Organized and hard-working web developer seeking to join a modern
+						company to rapidly build skills and provide value. Looking to
+						leverage proven organization and management skills to deliver
+						results to future employer.
 					</p>
 				</Col>
 			</Row>
