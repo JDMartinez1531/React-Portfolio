@@ -2,11 +2,11 @@
     margin: 15px;
 }
 
-.portcard:hover {
+/* .portcard:hover {
     border: 8px solid black;
     background-color: green;
     opacity: 100%;
-}
+} */
 
 .ghicon {
     text-align: center;
