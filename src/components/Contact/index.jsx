@@ -6,31 +6,41 @@ import Col from "react-bootstrap/Col";
 import "./contact.css";
 
 function Contact() {
+	// using state to keep track of server status
 	const [serverState, setServerState] = useState({
 		submitting: false,
 		status: null,
 	});
+	// function to handle response from formspree
 	const handleServerResponse = (ok, msg, form) => {
 		setServerState({
 			submitting: false,
 			status: { ok, msg },
 		});
+		// if accepted, reset form
 		if (ok) {
 			form.reset();
 		}
 	};
+	// function to handle form submission
 	const handleOnSubmit = (e) => {
+		// prevent default form behavior, assign the even target to the variable form
 		e.preventDefault();
 		const form = e.target;
+		// set server state to submitting while waiting for response
 		setServerState({ submitting: true });
+
+		// configure and send axios post to formspree, returns promise
 		axios({
 			method: "post",
 			url: "https://formspree.io/xrgyzgnj",
 			data: new FormData(form),
 		})
+		// resolve promise
 			.then((r) => {
 				handleServerResponse(true, "Thanks!", form);
 			})
+			// catch any errors along the way
 			.catch((r) => {
 				handleServerResponse(false, r.response.data.error, form);
 			});
@@ -63,9 +73,11 @@ function Contact() {
 						></textarea>
 				</Col>
 				<Col>
+						{/* disables button while waiting for response from formspree */}
 						<button className="btn btn-primary" type="submit" disabled={serverState.submitting}>
 							Submit
 						</button>
+						{/* displays status message from formspree if status is not ok */}
 						{serverState.status && (
 							<p className={!serverState.status.ok ? "errorMsg" : ""}>
 								{serverState.status.msg}
@@ -79,47 +91,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-
-
-
-
-
-
-
-/* <Container fluid className="form-wrapper" id="contact">
-			<Row>
-				<Col>
-					<h1>Contact</h1>
-				</Col>
-			</Row>
-			<Row>
-				<Col>
-					<form onSubmit={handleOnSubmit}>
-						<input
-							id="email"
-							type="email"
-							name="email"
-							placeholder="Enter email"
-							required
-						/>
-						<textarea
-							id="message"
-							name="message"
-							cols="40"
-							placeholder="Feel free to leave me a message"
-							required
-						></textarea>
-						<button type="submit" disabled={serverState.submitting}>
-							Submit
-						</button>
-						{serverState.status && (
-							<p className={!serverState.status.ok ? "errorMsg" : ""}>
-								{serverState.status.msg}
-							</p>
-						)}
-					</form>
-				</Col>
-			</Row>
-		</Container> */
