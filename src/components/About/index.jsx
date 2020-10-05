@@ -4,7 +4,7 @@ import profileImage from "../../images/profile-05.jpg";
 import Media from "react-bootstrap/Media";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-import pdf from "../../assets/files/JdmResume2020.pdf";
+import pdf from "../../assets/files/jdmresume2020.pdf";
 
 function About() {
 	return (
