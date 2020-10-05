@@ -1,7 +1,7 @@
 import project1 from "../images/travelb.png";
 import project2 from "../images/weather.png";
-import project3 from "../images/quiz.png";
-import project4 from "../images/password.jpg";
+import project3 from "../images/budget-demo.gif";
+import project4 from "../images/secret_santa.png";
 import project5 from "../images/teampro.png";
 import project6 from "../images/demo.gif";
 
@@ -25,20 +25,20 @@ export default [
 	},
 	{
 		id: 3,
-		title: "Code Quiz",
-		url: "https://jdmartinez1531.github.io/04-code-quiz/",
-		repository: "https://github.com/JDMartinez1531/travel-board",
+		title: "Budget App",
+		url: "https://github.com/JDMartinez1531/18-PWA-Budget-Tracker",
+		repository: "https://github.com/JDMartinez1531/18-PWA-Budget-Tracker",
 		image: project3,
 		text:
-			"A project that uses javascript to dynamically generate quiz questions. Saves high scores to local storage.",
+			"A progressive web app project that uses mongoDB and tracks a budget on or offline.",
 	},
 	{
 		id: 4,
-		title: "Password Generator",
-		url: "https://jdmartinez1531.github.io/password_generator/",
-		repository: "https://github.com/JDMartinez1531/password_generator",
+		title: "Secret Santa App",
+		url: "https://secret-santa-platform.herokuapp.com/",
+		repository: "https://github.com/JDMartinez1531/Secret-Santa-App",
 		image: project4,
-		text: "A project that uses JavaScript to generate a random password.",
+		text: "Full stack application that allows user to organize or participate in secret santa events.",
 	},
 	{
 		id: 5,
