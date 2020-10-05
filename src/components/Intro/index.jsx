@@ -18,7 +18,7 @@ function Intro() {
 						Organized and hard-working web developer seeking to join a modern
 						company to rapidly build skills and provide value. Looking to
 						leverage proven organization and management skills to deliver
-						results to future employer.
+						results.
 					</p>
 				</Col>
 			</Row>
