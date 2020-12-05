@@ -9,7 +9,8 @@
     text-align: center;
     font-weight: bold;
     font-size: 1.25rem;
-    margin-top: 2%
+    margin-top: 2%;
+    margin-bottom: 20%;
 }
 
 .intro {
@@ -30,4 +31,23 @@
     .intro-text {
         margin-bottom: 40%;
     }
+}
+
+.email {
+  color: #EBEBFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.button-col {
+  text-align: center;
+}
+
+.linkedin-button {
+margin-right: 5px;
+}
+
+.github-button {
+margin-left: 5px;
 }
