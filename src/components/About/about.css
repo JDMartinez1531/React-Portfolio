@@ -1,5 +1,5 @@
 .about {
-    height: 70vw;
+    height: fit-content;
     width: 100%;
     background-color: black;
     padding: 0 3rem 0 3rem;
@@ -24,12 +24,11 @@
     .aboutImage{
         height: 50vw;
         padding-top: 2rem;
-        margin-top: 30%;
+        margin-top: 10%;
     }
     .about {
         flex-direction: column;
         padding: 0 2rem 2rem 2rem;
-        height: 100vh;
     }
     .aboutText {
         margin-bottom: 30%;
