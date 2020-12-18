@@ -13,13 +13,6 @@
     display: none !important;
 }
 
-
-@media only screen and (max-width: 768px) {
-    .aboutImage{
-        height: 60%;
-    }
-}
-
 @media only screen and (max-width:670px) {
     .aboutImage{
         height: 50vw;
@@ -39,4 +32,8 @@
     .about {
         height: 60vw;
     }
+}
+
+.resumeButton {
+  margin-bottom: 5%;
 }

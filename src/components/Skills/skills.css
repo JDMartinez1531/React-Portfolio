@@ -1,0 +1,13 @@
+.skillsList {
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.skills-header {
+  padding-top: 2rem;
+}
