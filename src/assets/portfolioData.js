@@ -13,7 +13,8 @@ export default [
 		repository: "https://github.com/JDMartinez1531/travel-board",
 		image: project1,
 		text:
-			"An easy to use, mobile first web application for browsing popular travel destinations finding places of interest, and organizing your travel plans.",
+      "An easy to use, mobile first web application for browsing popular travel destinations finding places of interest, and organizing your travel plans.",
+      tech: ["Materialize", "AJAX", "Javascript", "Mapbox API", "Weather API"],
 	},
 	{
 		id: 2,
@@ -21,7 +22,8 @@ export default [
 		url: "https://jdmartinez1531.github.io/06-Weather-Dashboard/",
 		repository: "https://github.com/JDMartinez1531/04-code-quiz",
 		image: project2,
-		text: "A weather dashboard that displays weather data via third party API.",
+    text: "A weather dashboard that displays weather data via third party API.",
+    tech: ["Bootstrap", "AJAX", "Javascript", "Weather API"],
 	},
 	{
 		id: 3,
@@ -30,7 +32,8 @@ export default [
 		repository: "https://github.com/JDMartinez1531/18-PWA-Budget-Tracker",
 		image: project3,
 		text:
-			"A progressive web app project that uses mongoDB and tracks a budget on or offline.",
+      "A progressive web app project that uses mongoDB and tracks a budget on or offline.",
+      tech: ["Node.JS", "MongoDB", "Javascript", "Express.JS"],
 	},
 	{
 		id: 4,
@@ -38,7 +41,8 @@ export default [
 		url: "https://secret-santa-platform.herokuapp.com/",
 		repository: "https://github.com/JDMartinez1531/Secret-Santa-App",
 		image: project4,
-		text: "Full stack application that allows user to organize or participate in secret santa events.",
+    text: "Full stack application that allows user to organize or participate in secret santa events.",
+    tech: ["React.js", "Ant Design", "Javascript", "Node.JS", "SQL", "GraphQL"],
 	},
 	{
 		id: 5,
@@ -47,7 +51,8 @@ export default [
 		repository: "https://github.com/JDMartinez1531/10-Team-Profile-Generator",
 		image: project5,
 		text:
-			"A CLI application that uses a Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.",
+      "A CLI application that uses a Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.",
+      tech: ["Javascript", "Node.JS", "Jest"],
 	},
 	{
 		id: 6,
@@ -56,6 +61,7 @@ export default [
 		repository: "https://github.com/JDMartinez1531/12-MySQL-Employee-Tracker",
 		image: project6,
 		text:
-			"A node application that interfaces with a MySql database to manage employee data.",
+      "A node application that interfaces with a MySql database to manage employee data.",
+      tech: ["Javascript", "Node.JS", "MySQL"],
 	},
 ];

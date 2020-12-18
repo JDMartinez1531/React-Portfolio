@@ -14,6 +14,7 @@ function Portfolio(props) {
 			repo={project.repository}
 			imageLocation={project.image}
 			text={project.text}
+			tech={project.tech}
 		/>
 	));
 	return (

@@ -29,10 +29,13 @@ function Intro() {
 					<Button
 						className="linkedin-button"
 						variant="light"
-						href="#">
+						href="https://www.linkedin.com/in/joshuadmartinez/">
 						<FaLinkedin />
 					</Button>
-					<Button className="github-button" variant="light" href="#">
+					<Button
+						className="github-button"
+						variant="light"
+						href="https://github.com/JDMartinez1531">
 						<FaGithub />
 					</Button>
 				</Col>
