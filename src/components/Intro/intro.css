@@ -9,12 +9,13 @@
     text-align: center;
     font-weight: bold;
     font-size: 1.25rem;
-    margin-top: 2%
+    margin-top: 2%;
+    margin-bottom: 20%;
 }
 
 .intro {
     background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url("../../images/lightbg.jpg");
-    height: 60rem;
+    height: fit-content;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,6 +29,26 @@
         margin-top:40%;
     }
     .intro-text {
-        margin-bottom: 40%;
+        margin-bottom: 20%;
     }
+}
+
+.email {
+  color: #EBEBFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-bottom: 5%;
+}
+
+.button-col {
+  text-align: center;
+}
+
+.linkedin-button {
+margin-right: 5px;
+}
+
+.github-button {
+margin-left: 5px;
 }

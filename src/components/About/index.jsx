@@ -24,11 +24,10 @@ function About() {
 					tech and computer science, I decided to make a change even
 					before my industry saw a slowdown due to the pandemic.
 					Taking advantage of the extra time on my hands, I have
-					completed the Full Stack Web Developer certificate program
-					at UT.
+					completed the Web Developer certificate program at UT.
 				</p>
 				<Button
-					variant="secondary"
+					variant="light"
 					className="align-self-right resumeButton"
 					href={pdf}
 					target="_blank">
